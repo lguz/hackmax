@@ -36,7 +36,8 @@
                  <%= label_tag :Clasificacion %>
                  <%= text_field :movie, :classification, class: "form-control" %>
                  </br>
-                 <%= file_field :movie, :photo, class: "upload_img" %>
+                 <%= label_tag :Imagen %>
+                 <%= text_field :movie, :photo, class: "form-control  " %>
 
                 <p class="text-center">
                   <%= submit_tag "Enviar", class: "btn btn-primary" %>
@@ -70,7 +71,7 @@
                     <td><%= movie.release_data %></td>
                     <td><%= movie.summary %></td>
                     <td><%= movie.classification %></td>
-                    <td><%= image_tag "movie.photo_path" %></td>
+                    <td><%= image_tag movie.ext, :class => "img_preview" %></td>
                     <td><%= link_to 'Show', movie_path(movie) %></td>
                     <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
                     <td><%= link_to 'Destroy', movie_path(movie),

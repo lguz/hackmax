@@ -1,3 +1,182 @@
+<div class="container-fluid">
+	<div class="header navbar-fixed-top" >
+		<div class="slogan col-md-5">	
+			<h1>IMAX Caracas</h1>
+		</div>	
+		<div class="col-md-6 logo">
+			<%= image_tag 'movie_film.png' %>
+
+		</div>
+	</div>
+
+	<div class= "movie-box col-md-12 ">
+	<% @shows.each do |show| %>
+	<div class="img-pelicula col-md-2">
+		<img src="<%= show.movie.ext %>">
+		</div>
+		<div class="nombre col-md-2">
+			<h1><%= show.movie.title %></h1>
+			<h1><%= show.movie.genero %></h1>
+			<h1><%= show.movie.subtitle%></h1>
+			<h1><%= show.movie.classification%></h1>
+		</div>
+		<div class="sinpsis col-md-2">
+			<h1><%= show.summary %></h1>
+	<% end  %>
+		
+
+		</div>
+		<div class="seccion-compra col-md-4">
+			<h1>Compra</h1>
+			<button type="button" class="btn btn-warning">Comprar!!</button>
+
+		</div>
+	</div>
+
+	<div class= "movie-box col-md-12">
+		<div class="img-pelicula col-md-2">
+			<img src="http://ia.media-imdb.com/images/M/MV5BMTkxNzI3ODI4Nl5BMl5BanBnXkFtZTgwMjkwMjY4MjE@._V1_SX214_AL_.jpg">
+		</div>
+		<div class="nombre col-md-2">
+			<h1>Nombre</h1>
+			<h1>Genero</h1>
+			<h1>Clasificacion</h1>
+			<h1>ETC</h1>
+		</div>
+		<div class="sinpsis col-md-2">
+			<h1>Sinopsis</h1>
+			<p>---------------------------------------------------------------------------------</p>
+			<p>---------------------------------------------------------------------------------</p>
+			<p>---------------------------------------------------------------------------------</p>
+
+		</div>
+		<div class="seccion-compra col-md-4">
+			<h1>Compra</h1>
+			<button type="button" class="btn btn-warning">1:30 pm</button>
+			<button type="button" class="btn btn-warning">3:00 pm</button>
+			<button type="button" class="btn btn-warning">4:30 pm</button>
+			<button type="button" class="btn btn-warning">6:00 pm</button>	
+
+		</div>
+	</div>
+
+	<div class= "movie-box col-md-12">
+		<div class="img-pelicula col-md-2">
+			<img src="http://ia.media-imdb.com/images/M/MV5BMTkxNzI3ODI4Nl5BMl5BanBnXkFtZTgwMjkwMjY4MjE@._V1_SX214_AL_.jpg">
+		</div>
+		<div class="nombre col-md-2">
+			<h1>Nombre</h1>
+			<h1>Genero</h1>
+			<h1>Clasificacion</h1>
+			<h1>ETC</h1>
+		</div>
+		<div class="sinpsis col-md-2">
+			<h1>Sinopsis</h1>
+			<p>---------------------------------------------------------------------------------</p>
+			<p>---------------------------------------------------------------------------------</p>
+			<p>---------------------------------------------------------------------------------</p>
+
+		</div>
+		<div class="seccion-compra col-md-4">
+			<h1>Compra</h1>
+			<button type="button" class="btn btn-warning">1:30 pm</button>
+			<button type="button" class="btn btn-warning">3:00 pm</button>
+			<button type="button" class="btn btn-warning">4:30 pm</button>
+			<button type="button" class="btn btn-warning">6:00 pm</button>	
+
+		</div>
+	</div>
+
+	<div class= "movie-box col-md-12">
+		<div class="img-pelicula col-md-2">
+			<img src="http://ia.media-imdb.com/images/M/MV5BMTkxNzI3ODI4Nl5BMl5BanBnXkFtZTgwMjkwMjY4MjE@._V1_SX214_AL_.jpg">
+		</div>
+		<div class="nombre col-md-2">
+			<h1>Nombre</h1>
+			<h1>Genero</h1>
+			<h1>Clasificacion</h1>
+			<h1>ETC</h1>
+		</div>
+		<div class="sinpsis col-md-2">
+			<h1>Sinopsis</h1>
+			<p>---------------------------------------------------------------------------------</p>
+			<p>---------------------------------------------------------------------------------</p>
+			<p>---------------------------------------------------------------------------------</p>
+
+		</div>
+		<div class="seccion-compra col-md-4">
+			<h1>Compra</h1>
+			<button type="button" class="btn btn-warning">1:30 pm</button>
+			<button type="button" class="btn btn-warning">3:00 pm</button>
+			<button type="button" class="btn btn-warning">4:30 pm</button>
+			<button type="button" class="btn btn-warning">6:00 pm</button>	
+
+		</div>
+	</div>
+
+	<div class= "movie-box col-md-12">
+		<div class="img-pelicula col-md-2">
+			<img src="http://ia.media-imdb.com/images/M/MV5BMTkxNzI3ODI4Nl5BMl5BanBnXkFtZTgwMjkwMjY4MjE@._V1_SX214_AL_.jpg">
+		</div>
+		<div class="nombre col-md-2">
+			<h1>Nombre</h1>
+			<h1>Genero</h1>
+			<h1>Clasificacion</h1>
+			<h1>ETC</h1>
+		</div>
+		<div class="sinpsis col-md-2">
+			<h1>Sinopsis</h1>
+			<p>---------------------------------------------------------------------------------</p>
+			<p>---------------------------------------------------------------------------------</p>
+			<p>---------------------------------------------------------------------------------</p>
+
+		</div>
+		<div class="seccion-compra col-md-4">
+			<h1>Compra</h1>
+			<button type="button" class="btn btn-warning">1:30 pm</button>
+			<button type="button" class="btn btn-warning">3:00 pm</button>
+			<button type="button" class="btn btn-warning">4:30 pm</button>
+			<button type="button" class="btn btn-warning">6:00 pm</button>	
+
+		</div>
+	</div>
+
+	<div class= "movie-box col-md-12 text-center">
+		<div class="img-pelicula col-md-2">
+			<img src="http://ia.media-imdb.com/images/M/MV5BMTkxNzI3ODI4Nl5BMl5BanBnXkFtZTgwMjkwMjY4MjE@._V1_SX214_AL_.jpg">
+		</div>
+		<div class="nombre col-md-2">
+			<h1>Nombre</h1>
+			<h1>Genero</h1>
+			<h1>Clasificacion</h1>
+			<h1>ETC</h1>
+		</div>
+		<div class="sinpsis col-md-2">
+			<h1>Sinopsis</h1>
+			<p>---------------------------------------------------------------------------------</p>
+			<p>---------------------------------------------------------------------------------</p>
+			<p>---------------------------------------------------------------------------------</p>
+
+		</div>
+		<div class="seccion-compra col-md-4">
+			<h1>Compra</h1>
+			<button type="button" class="btn btn-warning">1:30 pm</button>
+			<button type="button" class="btn btn-warning">3:00 pm</button>
+			<button type="button" class="btn btn-warning">4:30 pm</button>
+			<button type="button" class="btn btn-warning">6:00 pm</button>	
+
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
 <h1>funcion</h1> 
 <% @shows.each do |show| %>
 	<p><%= show.time_show %></p>
@@ -9,7 +188,7 @@
 	 <%= link_to 'Comprar', rs_path(show) %>
 	</h1>
 	 </p>
-
+*++~~~~~
 
 
 <% end %>

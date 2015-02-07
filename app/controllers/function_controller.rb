@@ -48,7 +48,4 @@ class FunctionController < ApplicationController
 	  def function_params
 	    params.require(:show).permit(:date_show, :time_show, :movie_id, :theater_id)
 	  end
-	  def seat_params
-	    params.require(:seat).permit(:status, :show_id)
-	  end
 end

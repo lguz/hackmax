@@ -47,11 +47,11 @@
   </p>
   <p>
     <%= label_tag :Imagen %><br>
-    <%= text_field :movie, :photo %>
+    <%= text_field :movie, :ext %>
   </p>
   <p>
     <%= label_tag :Clasificacion %><br>
-    <%= range_field :movie, :classification, in: 1..5 %>
+    <%= text_field :movie, :classification%>
   </p>
   <p>
     <%= submit_tag "Enviar" %>

@@ -1,0 +1,15 @@
+<h1>funcion</h1> 
+<% @shows.each do |show| %>
+	<p><%= show.time_show %></p>
+	<p><%= show.date_show %></p>
+	<p><%= show.movie_id %></p>
+	<p><%= show.theater_id %></p>
+	<p>
+	<h1>	
+	 <%= link_to 'Comprar', rs_path(show) %>
+	</h1>
+	 </p>
+
+
+
+<% end %>

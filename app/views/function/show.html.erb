@@ -1,0 +1,19 @@
+<p>
+	<strong>Fecha</strong>
+<%= @shows.date_show %>
+</p>
+<p>
+	<strong>Hora</strong>
+<%= @shows.time_show %>
+</p>
+<p>
+	<strong>Pelicula</strong>
+<%= @shows.movie_id %>
+</p>
+<p>
+	<strong>Sala</strong>
+<%= @shows.theater_id %>
+</p>
+
+<%= link_to 'Edit funcion', edit_function_path(@functions) %>
+<%= link_to 'Back to Funciones', employee_path %>

@@ -13,26 +13,23 @@ class FunctionController < ApplicationController
 		@show.theater_id = show_param['theater_id']
 
 		if @show.save
-		  redirect_to admin_function_path
+			@test = @show.id
+		  	redirect_to admin_function_path
 		else
 		  render 'new'
 		end
-         @show_last = Show.last 
-         @test = @show_last.id 
-         @aaa = @test +1 
 		 @theater_id = Theater.find(@show.theater_id) 
          @theater_cantida = @theater_id.quantity
-         $i = 0
-         $cantidad = @theater_cantida
-
-         while $i < $cantidad do
-		@seat = Seat.new
-		seat_param = params[:seat]
-		@seat.status = seat_param['status']
-		@seat.show_id = seat_param["show_id"]
-         @seat.save
-         $i +=1
-         end
+         i = 0
+         cantidad = @theater_cantida
+         @status = "D"
+	        while i < cantidad do
+				@seat = Seat.new
+				@seat.status = @status
+				@seat.show_id = @test
+		        @seat.save
+		        i +=1
+	         end
 
 	end
 	def show

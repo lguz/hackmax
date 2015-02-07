@@ -24,13 +24,7 @@
                   <%=collection_select(:show, :movie_id, Movie.order(:title), :id, :title) %>
                   <%= label_tag(:id_theater, "Sala:") %>
                   <%=collection_select(:show, :theater_id, Theater.order(:name), :id, :name) %>
-                  <%= label_tag(:seat, "status", class: "prueba") %>
-                  <%= text_field :seat, :status, value: 'D', class: "prueba"%>
-                  <%@show_last = Show.last %>
-                  <% @test = @show_last.id %>
-                  <% @aaa = @test +1 %>
-                   <%= label_tag(:seat, "status", class: "prueba") %>
-                  <%= text_field :seat, :show_id, value: @aaa, class: "hidden"%>
+
                 <p class="text-center">
                   <%= submit_tag "Enviar", class: "btn btn-success" %>
                 </p>

@@ -15,28 +15,32 @@
 
       </div>
       </a>
-      <div class="box2">
-        <p class="title_box">Funciones</p>
-        <div class="row">
-          <div class="col-md-6">
-            <span class="fa-clock-o icon_box"></span> 
-          </div>
-          <div class="col-md-6">
-            <p class="count_adm"><%= @functionsCount %></p>    
-          </div>
-        </div>
-      </div>
-      <div class="box3">
-        <p class="title_box">Salas</p>
-        <div class="row">
-          <div class="col-md-6">
-            <span class="fa-clock-o icon_box"></span> 
-          </div>
-          <div class="col-md-6">
-            <p class="count_adm"><%= @salasCount %></p>
+      <a href="<%= admin_function_path %>" style="text-decoration:none">  
+        <div class="box2">
+          <p class="title_box">Funciones</p>
+          <div class="row">
+            <div class="col-md-6">
+              <span class="fa-clock-o icon_box"></span> 
+            </div>
+            <div class="col-md-6">
+              <p class="count_adm"><%= @functionsCount %></p>    
+            </div>
           </div>
         </div>
-      </div>
+      </a>
+      <a href="<%= admin_theater_path %>" style="text-decoration:none">  
+        <div class="box3">
+          <p class="title_box">Salas</p>
+          <div class="row">
+            <div class="col-md-6">
+              <span class="fa-clock-o icon_box"></span> 
+            </div>
+            <div class="col-md-6">
+              <p class="count_adm"><%= @salasCount %></p>
+            </div>
+          </div>
+        </div>
+      </a>
       <div class="box4">
         <p class="title_box">Usuarios</p>
         <div class="row">

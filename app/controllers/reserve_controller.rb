@@ -3,12 +3,12 @@ class ReserveController < ApplicationController
 
 	end
 	def show
-		@seatss = Seat.all
-		@seats = Show.find(params[:id])
-		@id = @seats.id
+		@show = Show.find(params[:id])
+		
 	end
+
 private
-	  def seat_params
+	  def show_params
 	    params.require(:show).permit(:id)
 	  end
 end

@@ -6,7 +6,7 @@
         <strong class="avaible"> Disponible </strong> <strong class="choice"> Selecionado </strong> <strong class="not_avaible"> No Disponible </strong>
       </div>
     </div>
-      <% @seatss.each do |seat| %>
+      <% @seats.each do |seat| %>
           <% if seat.show_id == @id %> 
             <div id="<%= seat.id %>" class="seats <%= seat.status %>">
               

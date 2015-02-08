@@ -3,8 +3,10 @@ class ReserveController < ApplicationController
 
 	end
 	def show
-		@seats = check_available params[:id]
-		@test  = 1..@seats
+		@seat_id = Show.find(params[:id])
+		@rese = Reserve.all
+		#@seats = check_available params[:id]
+		#@test  = 1..@seats
 	end
 	def create
 		@reserve = Reserve.new

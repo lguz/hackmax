@@ -1,4 +1,4 @@
 class Reserve < ActiveRecord::Base
-	has_many :seat
-	has_many :show
+	belongs_to :seat
+	belongs_to :show
 end

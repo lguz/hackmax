@@ -1,5 +1,5 @@
 class Seat < ActiveRecord::Base
 	belongs_to :show
-	belongs_to :reserve
+	has_many :reserve
 	belongs_to :theater
 end

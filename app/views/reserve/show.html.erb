@@ -6,13 +6,18 @@
         <strong class="avaible"> Disponible </strong> <strong class="choice"> Selecionado </strong> <strong class="not_avaible"> No Disponible </strong>
       </div>
     </div>
-      <% @test.each do |seat| %>
-
-            <div id="" class="seats D">
+      <% @rese.each do |seat| %>
+          <% if seat.seat.id %>
+            <div id="<%= seat.seat.id %>" class="seats <%= seat.status  %>">
+              
+            </div>
+            <% else %>
+            <div id="<%= seat.seat.id %>" class="seats D">
               
             </div>
         <% end %>
-		</div>
+        <% end %>
+    </div>
     <div class="col-md-3">
       <aside class="count_price">
         <div class="checked-place">            
@@ -22,13 +27,19 @@
         </div>
       </aside>
     </div>
-	</div>
+  </div>
 </div>
 <div>
-  <%= form_tag new_movie_path, method: :post do %>
+  <%= form_tag new_movie_path, method: :put do %>
     <div id="form_submit"></div>
     <p class="text-center">
       <%= submit_tag "Enviar", class: "btn btn-primary" %>
     </p>
   <% end %>
 </div>
+        
+
+
+
+
+

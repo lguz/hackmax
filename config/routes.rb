@@ -6,7 +6,7 @@ get 'admin/movie', to: 'admin#movie'
 get 'admin/show', to: 'admin#show'
 get 'admin/theater', to: 'admin#theater'
 get 'reserve', to: 'reserve#index'
-get 'reserve/show/:id', to: 'reserve#show', as: 'rs'
+get 'reserve/show/:id', to: 'reserve#show', as: 'buy'
 
 post 'new/movie', to: 'movie#create'
 post 'new/show', to: 'show#create'

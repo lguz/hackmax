@@ -12,7 +12,7 @@ class AdminController < ApplicationController
   def theater
     @theaters = Theater.all
   end
-  def function
+  def show
     @shows = Show.all
     
   end

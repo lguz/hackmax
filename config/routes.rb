@@ -3,20 +3,19 @@ Rails.application.routes.draw do
 
 get 'admin', to: 'admin#index'
 get 'admin/movie', to: 'admin#movie'
-get 'admin/function', to: 'admin#function'
+get 'admin/show', to: 'admin#show'
 get 'admin/theater', to: 'admin#theater'
 get 'reserve', to: 'reserve#index'
 get 'reserve/show/:id', to: 'reserve#show', as: 'rs'
 
-
 post 'new/movie', to: 'movie#create'
-post 'new/function', to: 'function#create'
+post 'new/show', to: 'show#create'
 post 'new/theater', to: 'theater#create'
 post 'new/reserve', to: 'reserve#create'
 
 
 scope '/admin' do
-   resources :movie, :function, :theater
+   resources :movie, :show, :theater
  end
 
 

@@ -1,4 +1,4 @@
-class FunctionController < ApplicationController
+class ShowController < ApplicationController
 	def new
 		@show = Show.new
 	end
@@ -13,15 +13,14 @@ class FunctionController < ApplicationController
 		@show.theater_id = show_param['theater_id']
 
 		if @show.save
-		  	redirect_to admin_function_path
+		  	redirect_to admin_show_path
 		else
 		  render 'new'
 		end
 		 
 	end
 	def show
-	    @shows = Show.find(params[:id])
-		 
+	    @show = Show.find(params[:id])
 	end
 
 	def edit
@@ -34,18 +33,18 @@ class FunctionController < ApplicationController
 	  @show = Show.find(params[:id])
 	 
 	  @show.update(show_params)
-	  redirect_to admin_function_path
+	  redirect_to admin_show_path
 	end
 	
 	def destroy
 	  @show = Show.find(params[:id])
 	  @show.destroy
 	
-	  redirect_to admin_function_path
+	  redirect_to admin_show_path
 	end
 
 	private
-	  def function_params
+	  def show_params
 	    params.require(:show).permit(:date_show, :time_show, :movie_id, :theater_id)
 	  end
 end
